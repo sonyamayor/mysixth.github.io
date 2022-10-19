@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Бобух Олег 27/2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <h1>Калькулятор стоимости пиццы:</h1>
+    <form>
+      <div>Какую пиццу вы выберете?</div>
+      <select name="prodType">
+        <option value="0">Не выбрано</option>
+        <option value="1">Пицца «Маргарита»</option>
+        <option value="2">Пицца «Капричиоза»</option>
+        <option value="3">Пицца «Дьябола»</option>
+      </select>
+      <div id="radios">
+        <label><input type="radio" name="prodOptions" value="option1">Тонкое тесто</label>
+        <label><input type="radio" name="prodOptions" value="option2"  checked="checked">Классическое тесто</label>
+      </div>
+      <div id="checkboxes">
+        <label><input type="checkbox" name="prodM">Больше перца</label>
+        <label><input type="checkbox" name="prodM2">Больше бекона</label>
+        <label><input type="checkbox" name="prodM3">Двойная порция сыра</label>
+    </div>
+    </form>
+    <div>Количество:<br></div>
+        <input id="input" type="text" value="0">
+        <br>
+        Итого к оплате:<div id="prodPrice"></div>
+    <script src="jscript.js" defer></script>
+  </body>
+  </html>
